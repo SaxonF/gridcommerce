@@ -1,0 +1,34 @@
+#page-content.two-col
+	.wrapper
+		.cart
+			%header#page-header
+				%h1 Your Cart
+			%article.entry
+				%ul.cart-items
+					%li.item
+						=image_tag "/images/products/cart1.png"
+						%span.remove
+						%h5.delta Heritage Shirt in Indigo
+						%span.price.delta $450.00
+
+					%li.item
+						=image_tag "/images/products/cart2.png"
+						%span.remove
+						%h5.delta Denim Mens Shorts
+						%span.price.delta $70.00
+		.totals
+			%h6 Your Order
+			%p.font_small Shipping is calculated automatically based on your location.
+			%table
+				%tr
+					%th Products
+					%td $525.00
+				%tr.shipping
+					%th Shipping
+					%td 
+						$50.00
+						%a{:href => "#"} Calculate
+				%tr
+					%th Total
+					%td $575.00
+			=link_to "Checkout", "/checkout", :class => "button dark block"

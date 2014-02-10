@@ -1,0 +1,58 @@
+#page-content
+	.wrapper
+		%header#page-header
+			%h1 The Blog
+		.entry-list
+			%article.entry.list-entry
+				%header.entry-header
+					%h2.entry-title.gamma
+						%a{:href => "/index"}Heritage Shirt in Indigo
+					%time.entry-date.delta February 3, 2014
+				.post-gallery
+					%ul.image-grid.clearfix
+						%li.grid-image-sizer
+						%li.grid-image.grid-image-big
+							%a{:href => "#", :class => "image-actions"}
+								=image_tag "/images/blog/4.jpg"
+						%li.grid-image.grid-image-small
+							%a{:href => "#", :class => "image-actions"}
+								=image_tag "/images/blog/3.jpg"
+						%li.grid-image.grid-image-small
+							%a{:href => "#", :class => "image-actions"}
+								=image_tag "/images/blog/5.jpg"
+					%figcaption.image-caption This is a gallery caption that can be displayed on blog posts and pages. 
+				.entry-excerpt
+					%p As we all know, just because a font is available on the web does not mean it was designed for the web. Today, Dan Eden looks at a few screen-optimized typefaces available from Fonts.com.
+				 
+				.entry-footer
+					=link_to "2 Comments", "#", :class => "comments-link"
+					%ul.categories
+						%li=link_to "Shipping", "#"
+						%li=link_to "Design", "#"
+					=link_to "Share", "#", :class => "share-link"
+			%article.entry.list-entry.format-quote
+				%h3 You can lead the horse to water, but you can’t make it drink.
+				%span.quote-source.emphasis Barry Bowles
+			%article.entry.list-entry.format-link
+				%h2=link_to "A really good link I found the other day.", "#"
+				=link_to "www.dribbble.com", "#", :class => "link-source emphasis"
+			%article.entry.list-entry
+				%header.entry-header
+					=image_tag "/images/blog/1.jpg", :class => "featured-image"
+					%h2.entry-title.gamma Heritage Shirt in Indigo
+					%time.entry-date.delta February 3, 2014
+				.entry-excerpt
+					%p Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. 
+					%p Nullam id dolor id nibh ultricies vehicula ut id elit. Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor aucto.
+				 
+				.entry-footer
+					=link_to "2 Comments", "#", :class => "comments-link"
+					%ul.categories
+						%li=link_to "Shipping", "#"
+						%li=link_to "Design", "#"
+					=link_to "Share", "#", :class => "share-link"
+		%nav.entry-nav.row
+			.half.unit
+				= link_to 'Previous Page', '#', :class => "previous emphasis border-block"
+			.half.unit	
+				= link_to 'Next Page', '#', :class => "next emphasis border-block"

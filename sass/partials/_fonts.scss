@@ -1,0 +1,126 @@
+// font-face fonts
+// see http://compass-style.org/docs/reference/compass/css3/font_face/
+
+//@import "compass/css3/font-face"
+
+@mixin small-capital{
+	font-size:0.857em; text-transform:uppercase; letter-spacing:.1em; font-weight:bold;
+}
+
+@mixin serif-font{
+	font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+
+/* Rendering */
+html,
+input,
+textarea                    { -webkit-font-smoothing:antialiased; }
+
+
+ /*
+  11 / 14 =     0.707     (11px equivalent)
+  14 / 14 =     1em         (14px equivalent)
+  20 / 14 =     1.414     (20px equivalent)
+  28 / 14 =     1.999    (28px equivalent)
+  40 / 14 =     2.827       (40px equivalent)
+  56 / 14 =     3.998    (56px equivalent)
+ */
+
+body {
+  background-color: white;
+  font-size: 0.875em;
+  font-family: 'Helvetica Neue', Helvetica, arial, serif;
+  font-weight: 400;
+  line-height: $line-height;
+  color: $font-color;
+}
+
+p {margin-bottom: 1.414em;}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  font-weight:bold;
+  color:$header-color;
+}
+
+h1, .alpha {
+  margin-top: 0;
+  font-size: 3.998em;
+  letter-spacing: -2px;
+}
+
+#page-header h1{
+	font-size:0.857em;
+	color:$link-color;
+	text-transform:uppercase;
+	letter-spacing:.1em;
+	border-bottom:3px solid;
+	padding-bottom:9px;
+	display:inline-block;
+	padding-right:4em;
+	margin-bottom:5em;
+}
+
+h2, .beta {font-size: 2.827em; letter-spacing: -1px;}
+
+h2.entry-title a{
+	color:$header-color;
+}
+
+h3, .gamma {font-size: 1.999em; line-height:1.3; letter-spacing: -1px;}
+
+.em{
+	@include serif-font;
+	font-style:italic;
+	font-weight:normal;
+}
+
+h4, .delta {font-size: 1.414em; line-height:1.5;}
+
+h5 {font-size: 1em; line-height:1.65;}
+
+h6, .emphasis {font-size:0.857em; text-transform:uppercase; letter-spacing:.1em; font-weight:bold; }
+
+.line-heading{
+	border-bottom:3px solid;
+	padding-bottom:9px;
+	display:inline-block;
+	color:$link-color;
+}
+
+.spaced{
+	margin-bottom:1.414em;
+}
+
+small, .font_small {font-size: 0.7857em; -webkit-font-smoothing:subpixel-antialiased; }
+
+blockquote {
+	border-left:5px solid $link-color;
+	margin:0;
+	padding:1.414em 0 1.414em 2em;
+	font-size:1.414em;
+	margin:1.414em 0;
+	color:$link-color;
+	font-style:italic;
+	@include serif-font;
+}
+
+strong{
+	color:$header-color;
+}
+
+a{
+	color:$link-color;
+	text-decoration:none;
+	&:hover{
+		color:$link-hover-color;
+	}
+}
+
+/* Aligning */
+
+.align-center{
+	text-align:center;
+}

@@ -1,0 +1,165 @@
+@import "compass/css3";
+
+//-----------------------------------------------
+// The following html5-boilerplate styles should
+// probably be customized for each site
+//-----------------------------------------------
+body, select, input, textarea {
+  color: $font-color;
+  // Set your base font here, to apply evenly
+  // font-family: Georgia, serif;
+}
+
+//-----------------------------------
+// Add your own custom styles below
+//-----------------------------------
+
+body {
+}
+
+#container {}
+
+header#header {
+	width:215px;
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	padding:40px;
+	font-size:0.857em;
+	#site-logo{
+		img{
+			max-width:100%;
+		}
+	}
+	.mini-cart{
+		padding:1em 0;
+		margin-top:2.5em;
+		position:absolute;
+		bottom:40px;
+		width:135px;
+		&:before{
+			content:"";
+			height:2px;
+			width:30px;
+			background:$border-color;
+			position:absolute;
+			top:-1em;
+			left:0;
+		}
+		h5{
+			margin:0;
+			span{
+				color:$soft-color;
+				padding-left:15px;
+				margin-left:15px;
+				border-left:1px solid $border-color;
+			}
+		}
+	}
+	nav#primary{
+		ul{
+			margin:0;
+			padding:2em 0 0;
+			li{
+				padding:0.5em 0;
+				a{
+					color:$header-color;
+					font-weight:bold;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	nav#secondary{
+		font-size:0.916em;
+		ul{
+			margin:0;
+			padding:2em 0 0;
+			li{
+				padding:0.25em 0;
+				a{
+					color:$soft-color;
+					text-decoration: none;
+					&:hover{
+						color:$link-hover-color;
+					}
+				}
+			}
+		}
+	}
+}
+
+#page-header{
+	clear:both;
+	overflow:hidden;
+}
+
+#main {
+	margin-left:215px;
+	position: relative;
+	.wrapper{
+		padding:5em 0;
+	}
+	#page-content{
+		.wrapper{
+			width:600px;
+		}
+		&.grid{
+			.wrapper{
+				width:100%;
+				padding:0 40px 0 0;
+				&.full{
+					padding:0;
+				}
+			}
+		}
+		&.two-col{
+			.wrapper{
+				width:980px;
+				padding:0;
+			}
+		}
+	}
+	#page-content.page{
+		background:#f8f8f8;
+		width:100%;
+		padding:0 5em;
+		.wrapper{
+			width:720px;
+		}
+		.featured-image{
+			height:470px;
+			background:#ed008c url("../images/placement/3.jpg");
+			background-size:cover;
+			margin:0 -5em;
+		}
+	}
+	#page-content.page.center{
+		.wrapper{
+			margin:0 auto;
+		}
+	}
+	
+}
+
+#page-content .entry h2:first-child, #page-content .entry-content h3:first-child, #page-content .entry-content h2:first-child{
+	padding-top:0;
+	margin-top:0;
+}
+
+footer {}
+
+/* Page Elements */
+
+#page-content{
+	.text-block{
+		max-width:540px;
+		margin:0 auto;
+		padding:5em 0;
+	}
+	.text-block:first-child{
+		padding:0 0 5em;
+	}
+}
