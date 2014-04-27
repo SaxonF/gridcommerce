@@ -273,3 +273,57 @@ ul.product-grid{
 		}
 	}
 }
+
+/* Product Cover Pages */
+
+.grid{
+	#category-header.cover{
+		position: relative;
+		height:760px;
+		background:url("../images/placement/6.jpg") no-repeat center center;
+		background-size:cover;
+		text-align: center;
+		h1{
+			font-size:78px;
+			margin-top:24%;
+		}
+		.cover-caption{
+			color:white;
+			@include small-capital;
+			max-width:260px;
+			margin:0 auto;
+			position:absolute;
+			bottom:100px;
+			left:50%;
+			margin-left:-130px;
+			line-height:24px;
+		}
+	}
+	.cover-products{
+		padding:0 40px;
+		background:#e5e5e5;
+	}
+	.scroll-down{
+		display:block;
+		position:absolute;
+		bottom:50px;
+		left:50%;
+		margin-left:-16px;
+		width:33px;
+		height:18px;
+		background:url("../images/scroll-down.png") no-repeat center center;
+		-webkit-transition: opacity .2s ease-in-out;
+		-moz-transition: opacity .2s ease-in-out;
+		-ms-transition: opacity .2s ease-in-out;
+		-o-transition: opacity .2s ease-in-out;
+		transition: opacity .2s ease-in-out;
+		span{
+			display:none;
+			color:white;
+			font-size:11px;
+		}
+		&:hover{
+			opacity:0.4;
+		}
+	}
+}

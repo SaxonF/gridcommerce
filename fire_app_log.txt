@@ -2288,3 +2288,149 @@ when it has other properties nested beneath it.
 2014-02-10 20:35:39 identical stylesheets/style.css 
 2014-02-10 20:35:44 overwrite stylesheets/style.css 
 2014-02-11 09:39:33 identical stylesheets/style.css 
+2014-02-11 21:51:39 overwrite stylesheets/style.css 
+2014-02-11 21:55:01 overwrite stylesheets/style.css 
+2014-02-11 21:55:05 overwrite stylesheets/style.css 
+2014-02-11 22:42:18 overwrite stylesheets/style.css 
+2014-02-11 22:42:29     error sass/style.scss (Line 281 of sass/partials/_products.scss: Invalid CSS after "...tion: relative;": expected "}", was "")
+2014-02-11 22:42:29 overwrite stylesheets/style.css 
+2014-02-11 22:42:29     error sass/style.scss (Line 281 of sass/partials/_products.scss: Invalid CSS after "...tion: relative;": expected "}", was "")
+2014-02-11 22:42:29 identical stylesheets/style.css 
+2014-02-11 22:42:30     error sass/style.scss (Line 281 of sass/partials/_products.scss: Invalid CSS after "...tion: relative;": expected "}", was "")
+2014-02-11 22:42:30 identical stylesheets/style.css 
+2014-02-11 22:42:31     error sass/style.scss (Line 281 of sass/partials/_products.scss: Invalid CSS after "...tion: relative;": expected "}", was "")
+2014-02-11 22:42:31 identical stylesheets/style.css 
+2014-02-11 22:42:38 overwrite stylesheets/style.css 
+2014-02-11 22:42:41 overwrite stylesheets/style.css 
+2014-02-11 22:42:45 overwrite stylesheets/style.css 
+2014-02-11 22:42:51 overwrite stylesheets/style.css 
+2014-02-11 22:44:51 overwrite stylesheets/style.css 
+2014-02-11 22:45:18 overwrite stylesheets/style.css 
+2014-02-11 22:45:23 overwrite stylesheets/style.css 
+2014-02-11 22:46:06 identical stylesheets/style.css 
+2014-02-11 22:46:07 identical stylesheets/style.css 
+2014-02-11 22:46:14 overwrite stylesheets/style.css 
+2014-02-11 22:46:18 overwrite stylesheets/style.css 
+2014-02-11 22:46:31 identical stylesheets/style.css 
+2014-02-11 22:46:34 identical stylesheets/style.css 
+2014-02-11 22:46:38 overwrite stylesheets/style.css 
+2014-02-11 22:47:10 overwrite stylesheets/style.css 
+2014-02-11 22:47:19 identical stylesheets/style.css 
+2014-02-11 22:47:35     error sass/style.scss (Line 284 of sass/partials/_products.scss: Invalid CSS after "		margin-right": expected ";", was ":-40px;")
+2014-02-11 22:47:35 overwrite stylesheets/style.css 
+2014-02-11 22:47:36     error sass/style.scss (Line 284 of sass/partials/_products.scss: Invalid CSS after "		margin-right": expected ";", was ":-40px;")
+2014-02-11 22:47:36 identical stylesheets/style.css 
+2014-02-11 22:47:56 overwrite stylesheets/style.css 
+2014-02-11 22:48:01 overwrite stylesheets/style.css 
+2014-02-11 22:48:05 overwrite stylesheets/style.css 
+2014-02-11 22:48:15 overwrite stylesheets/style.css 
+2014-02-11 22:48:25 identical stylesheets/style.css 
+2014-02-11 22:48:31 overwrite stylesheets/style.css 
+2014-02-11 22:48:36 overwrite stylesheets/style.css 
+2014-02-11 22:48:38 identical stylesheets/style.css 
+2014-02-11 22:48:42 identical stylesheets/style.css 
+2014-02-11 22:48:55     error sass/style.scss (Line 292 of sass/partials/_products.scss: Undefined mixin 'caps-font'.)
+2014-02-11 22:48:55 overwrite stylesheets/style.css 
+2014-02-11 22:49:07 overwrite stylesheets/style.css 
+2014-02-11 22:49:24 overwrite stylesheets/style.css 
+2014-02-11 22:49:26 overwrite stylesheets/style.css 
+2014-02-11 22:49:30 overwrite stylesheets/style.css 
+2014-02-11 22:49:32 overwrite stylesheets/style.css 
+2014-02-11 22:49:41 overwrite stylesheets/style.css 
+2014-02-11 22:50:14 overwrite stylesheets/style.css 
+2014-02-11 22:50:22 identical stylesheets/style.css 
+2014-02-11 22:50:27 overwrite stylesheets/style.css 
+2014-02-11 22:50:36 identical stylesheets/style.css 
+2014-02-11 22:50:41 overwrite stylesheets/style.css 
+2014-02-11 22:50:45 overwrite stylesheets/style.css 
+2014-02-11 22:51:31 identical stylesheets/style.css 
+2014-02-11 22:52:10 overwrite stylesheets/style.css 
+2014-02-11 22:52:12     error sass/style.scss (Line 306 of sass/partials/_products.scss: Invalid CSS after "		background:": expected expression (e.g. 1px, bold), was "}")
+2014-02-11 22:52:12 overwrite stylesheets/style.css 
+2014-02-11 22:52:13     error sass/style.scss (Line 306 of sass/partials/_products.scss: Invalid CSS after "		background:": expected expression (e.g. 1px, bold), was "}")
+2014-02-11 22:52:13 identical stylesheets/style.css 
+2014-02-11 22:52:30     error sass/style.scss (Line 126 of sass/partials/_page.scss: Undefined variable: "$pageBack".)
+2014-02-11 22:52:30 overwrite stylesheets/style.css 
+2014-02-11 22:52:31     error sass/style.scss (Line 126 of sass/partials/_page.scss: Undefined variable: "$pageBack".)
+2014-02-11 22:52:31 identical stylesheets/style.css 
+2014-02-11 22:52:47     error sass/style.scss (Line 306 of sass/partials/_products.scss: Invalid CSS after "		background:": expected expression (e.g. 1px, bold), was "}")
+2014-02-11 22:52:47 overwrite stylesheets/style.css 
+2014-02-11 22:52:48     error sass/style.scss (Line 306 of sass/partials/_products.scss: Invalid CSS after "		background:": expected expression (e.g. 1px, bold), was "}")
+2014-02-11 22:52:48 identical stylesheets/style.css 
+2014-02-11 22:52:49     error sass/style.scss (Line 306 of sass/partials/_products.scss: Invalid CSS after "		background:": expected expression (e.g. 1px, bold), was "}")
+2014-02-11 22:52:49 identical stylesheets/style.css 
+2014-02-11 22:52:50     error sass/style.scss (Line 306 of sass/partials/_products.scss: Invalid CSS after "		background:": expected expression (e.g. 1px, bold), was "}")
+2014-02-11 22:52:50 identical stylesheets/style.css 
+2014-02-11 22:52:54     error sass/style.scss (Line 306 of sass/partials/_products.scss: Invalid CSS after "		background:": expected expression (e.g. 1px, bold), was "}")
+2014-02-11 22:52:54 identical stylesheets/style.css 
+2014-02-11 22:52:55     error sass/style.scss (Line 306 of sass/partials/_products.scss: Invalid CSS after "		background:": expected expression (e.g. 1px, bold), was "}")
+2014-02-11 22:52:55 identical stylesheets/style.css 
+2014-02-11 22:53:04 overwrite stylesheets/style.css 
+2014-02-11 22:53:11 identical stylesheets/style.css 
+2014-02-11 22:53:14 overwrite stylesheets/style.css 
+2014-02-11 22:53:20 overwrite stylesheets/style.css 
+2014-02-11 22:53:23 overwrite stylesheets/style.css 
+2014-02-11 22:53:52 identical stylesheets/style.css 
+2014-02-11 22:53:55 overwrite stylesheets/style.css 
+2014-02-11 22:54:15 overwrite stylesheets/style.css 
+2014-02-11 23:10:09 identical stylesheets/style.css 
+2014-02-11 23:10:38 overwrite stylesheets/style.css 
+2014-02-11 23:10:43 overwrite stylesheets/style.css 
+2014-02-11 23:11:02 overwrite stylesheets/style.css 
+2014-02-11 23:11:05 overwrite stylesheets/style.css 
+2014-02-11 23:11:12 overwrite stylesheets/style.css 
+2014-02-11 23:11:24 overwrite stylesheets/style.css 
+2014-02-11 23:11:29 identical stylesheets/style.css 
+2014-02-11 23:11:46 overwrite stylesheets/style.css 
+2014-02-11 23:11:59 overwrite stylesheets/style.css 
+2014-02-11 23:12:02 overwrite stylesheets/style.css 
+2014-02-11 23:12:22 overwrite stylesheets/style.css 
+2014-02-11 23:12:23 overwrite stylesheets/style.css 
+2014-02-11 23:12:27 overwrite stylesheets/style.css 
+2014-02-11 23:12:52 overwrite stylesheets/style.css 
+2014-02-11 23:12:54 identical stylesheets/style.css 
+2014-02-11 23:13:05 overwrite stylesheets/style.css 
+2014-02-11 23:13:13 overwrite stylesheets/style.css 
+2014-02-11 23:13:23 identical stylesheets/style.css 
+2014-02-11 23:13:26 overwrite stylesheets/style.css 
+2014-02-11 23:14:26 overwrite stylesheets/style.css 
+2014-02-11 23:14:31 identical stylesheets/style.css 
+2014-02-11 23:16:04 identical stylesheets/style.css 
+2014-02-11 23:16:08 overwrite stylesheets/style.css 
+2014-02-11 23:16:24 overwrite stylesheets/style.css 
+2014-02-11 23:16:36 identical stylesheets/style.css 
+2014-02-11 23:17:58 overwrite stylesheets/style.css 
+2014-02-11 23:18:04 overwrite stylesheets/style.css 
+2014-02-11 23:18:13 overwrite stylesheets/style.css 
+2014-02-11 23:19:03 overwrite stylesheets/style.css 
+2014-02-11 23:19:07 identical stylesheets/style.css 
+2014-02-11 23:19:09 overwrite stylesheets/style.css 
+2014-02-11 23:19:13 overwrite stylesheets/style.css 
+2014-02-11 23:19:28 identical stylesheets/style.css 
+2014-02-11 23:19:31 overwrite stylesheets/style.css 
+2014-02-11 23:19:39 overwrite stylesheets/style.css 
+2014-02-11 23:19:50 overwrite stylesheets/style.css 
+2014-02-11 23:19:58 overwrite stylesheets/style.css 
+2014-02-11 23:20:03 overwrite stylesheets/style.css 
+2014-02-11 23:20:09 overwrite stylesheets/style.css 
+2014-02-11 23:20:48 overwrite stylesheets/style.css 
+2014-02-11 23:21:08 identical stylesheets/style.css 
+2014-02-11 23:21:10 overwrite stylesheets/style.css 
+2014-04-27 17:20:21 overwrite stylesheets/style.css 
+2014-04-27 17:20:53 overwrite stylesheets/style.css 
+2014-04-27 17:21:04 overwrite stylesheets/style.css 
+2014-04-27 17:21:24 overwrite stylesheets/style.css 
+2014-04-27 17:21:26 identical stylesheets/style.css 
+2014-04-27 17:21:29 overwrite stylesheets/style.css 
+2014-04-27 17:21:32 identical stylesheets/style.css 
+2014-04-27 17:21:34 overwrite stylesheets/style.css 
+2014-04-27 17:21:39 identical stylesheets/style.css 
+2014-04-27 17:21:44 overwrite stylesheets/style.css 
+2014-04-27 17:21:59 overwrite stylesheets/style.css 
+2014-04-27 17:22:01 overwrite stylesheets/style.css 
+2014-04-27 17:22:45 overwrite stylesheets/style.css 
+2014-04-27 17:23:23 overwrite stylesheets/style.css 
+2014-04-27 17:23:30 overwrite stylesheets/style.css 
+2014-04-27 17:23:36 overwrite stylesheets/style.css 
+2014-04-27 17:25:27 overwrite stylesheets/style.css 
+2014-04-27 17:25:53 overwrite stylesheets/style.css 

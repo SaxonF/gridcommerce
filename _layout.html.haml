@@ -46,19 +46,17 @@
             %span.cart-total $249.00
         %nav#primary
           %ul
-            %li= link_to "About", "/about"
-            %li= link_to "Read Me", "/about.html"
-            %li= link_to "Blog", "/blog"
-            %li= link_to "Products", "/products"
+            %li= link_to "Mens", "/products"
+            %li= link_to "Womens", "/products"
+            %li= link_to "Sale", "/products"
+            %li= link_to "Lookbook", "/lookbook"
             
         %nav#secondary
           %ul
-            %li= link_to "Dresses", "#"
-            %li= link_to "Tops", "#"
-            %li= link_to "Knitwear", "#"
-            %li= link_to "Jackets & Coats", "#"
-            %li= link_to "Denim", "#"
-            %li= link_to "Jeans", "#"
+            %li= link_to "About", "/about"
+            %li= link_to "Shipping Info", "/about.html"
+            %li= link_to "Blog", "/blog"
+            %li= link_to "Contact & Coats", "#"
       #main{ :role => 'main' }
         = yield
       %footer

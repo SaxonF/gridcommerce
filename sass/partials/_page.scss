@@ -17,15 +17,21 @@ body, select, input, textarea {
 body {
 }
 
-#container {}
+#container {
+	padding:65px;
+}
+
+#page-content.grid{
+	margin:-65px -65px -65px 0;
+}
 
 header#header {
-	width:215px;
+	width:260px;
 	position:fixed;
 	top:0;
 	bottom:0;
 	left:0;
-	padding:40px;
+	padding:65px;
 	font-size:0.857em;
 	#site-logo{
 		img{
@@ -97,7 +103,7 @@ header#header {
 }
 
 #main {
-	margin-left:215px;
+	margin-left:195px;
 	position: relative;
 	.wrapper{
 		padding:5em 0;
@@ -123,9 +129,10 @@ header#header {
 		}
 	}
 	#page-content.page{
-		background:#f8f8f8;
+		background:$pageBack;
 		width:100%;
 		padding:0 5em;
+		margin:-65px -65px -65px 0;
 		.wrapper{
 			width:720px;
 		}
