@@ -1,0 +1,125 @@
+%section.page-content.grid
+	.container.full
+		%article.post-single.entry
+			.featured-image
+				=image_tag "http://d3hj244ay8zo5a.cloudfront.net/wordpress/wp-content/uploads/2014/04/IMG_6423.jpg"
+			.post-inner
+				%header.entry-header
+					%h2.entry-title How To Make Burrata
+					%time.entry-date.delta February 3, 2014
+				.entry-meta
+					%h6 Author
+					%span.author Saxon Fletcher
+					%h6 Tags
+					%ul.tags
+						%li
+							%a{:href => "#"}
+								Shopping
+						%li
+							%a{:href => "#"}
+								Fashion
+						%li
+							%a{:href => "#"}
+								Design
+					%h6 14 Comments
+					%p
+						Got something to say? Feel free, I want to hear from you! 
+						%br
+						= link_to "Leave a Comment", "#", :class => "leave-comment"
+				.entry-excerpt
+					%p.delta As we all know, just because a font is available on the web does not mean it was designed for the web. Today, Dan Eden looks at a few screen-optimized typefaces available from Fonts.com.
+				.entry-content
+					%p Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. 
+					%p Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor aucto.
+					%p The word “serendipity” was first coined by Horace Walpole, an 18th Century British diarist, who wrote about the Persian story of The Three Princes of Serendip (now Sri Lanka), in which three princes went on a journey “making discoveries, by accidents and sagacity, of things they were not in quest of…”
+					%p His explanation in his original letter is a little difficult to grasp and is oddly ambiguous. It was only some time later, after his writings were published in the mid 19th Century, that the meaning we now attribute to the word began to be applied.
+					.post-gallery
+						%ul.image-grid.clearfix
+							%li.grid-image-sizer
+							%li.grid-image.grid-image-big
+								%a{:href => "#", :class => "image-actions"}
+									=image_tag "/images/blog/4.jpg"
+							%li.grid-image.grid-image-small
+								%a{:href => "#", :class => "image-actions"}
+									=image_tag "/images/blog/3.jpg"
+							%li.grid-image.grid-image-small
+								%a{:href => "#", :class => "image-actions"}
+									=image_tag "/images/blog/5.jpg"
+						%figcaption.image-caption This is a gallery caption that can be displayed on blog posts and pages. 
+					%h4 Heading Three
+					%p Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. 
+					%p Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor aucto.
+					%blockquote A combination of events which are not individually beneficial, but occurring together produce a good or wonderful outcome.
+					%p In the process one thing seems to have been lost in translation from his original observation, that I think still stands true. And that’s that sagacity was involved—a word that has roots in seeking, being observant, wise and keen. 
+				.entry-footer
+					%nav.entry-nav.row
+						.half.unit
+							= link_to 'Previous Post', '#', :class => "previous emphasis border-block"
+						.half.unit	
+							= link_to 'Next Post', '#', :class => "next emphasis border-block"
+					.entry-share.clearfix
+						%h5 Share This Post
+						%ul.share-links
+							%li.facebook
+							%li.twitter
+							%li.google
+							%li.pinterest
+				#comments
+					.comments-header
+						%h6 14 Comments
+						%p.font_small 
+							Got something to say? Feel free, I want to hear from you! 
+							%br
+							= link_to "Leave a Comment", "#", :class => "leave-comment"
+					%form.comment-form
+						.input.text
+							%input.form-control{:type => "text", :placeholder => "Name"}
+						.input.text
+							%input.form-control{:type => "text", :placeholder => "Email"}
+						.input.text
+							%textarea.form-control{:placeholder => "Comment"}
+						.input.submit
+							%input.dark.button.submit{:type => "submit", :value => "Post comment"}
+					%ul.comments
+						%li.comment
+							= image_tag "/images/avatar.jpg", :class => "coment-avatar"
+							.comment-body
+								%h5 Saxon Fletcher
+								%time.comment-time.font_small 
+									14th February 2013 - 
+									= link_to "Reply", "#"
+								%p In the process one thing seems to have been lost in translation from his original observation, that I think still stands true. And that’s that sagacity was involved—a word that has roots in seeking, being observant, wise and keen.
+								%p Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. 
+						%li.comment
+							= image_tag "/images/avatar.jpg", :class => "coment-avatar"
+							.comment-body
+								%h5 Saxon Fletcher
+								%time.comment-time.font_small 
+									14th February 2013 - 
+									= link_to "Reply", "#"
+								%p In the process one thing seems to have been lost in translation from his original observation, that I think still stands true. And that’s that sagacity was involved—a word that has roots in seeking, being observant, wise and keen. 
+		%section.related-posts
+			%article.post-large.post
+				.post-image
+					%a{:href => "#", :class => "image-actions"}
+						= image_tag "/images/blog/3.jpg", :class => "post-image"
+				.post-meta
+					%h2.post-title= link_to "Heritage Shirt in Indigo", "#"
+					%span.date 6th September 2014
+					%p.excerpt Engineered Garments designer Daiki Suzuki masterfully blends classic Americana.
+			%article.post-large.post
+				.post-image
+					%a{:href => "#", :class => "image-actions"}
+						= image_tag "/images/blog/4.jpg", :class => "post-image"
+				.post-meta
+					%h2.post-title= link_to "Heritage Shirt in Indigo", "#"
+					%span.date 6th September 2014
+					%p.excerpt Engineered Garments designer Daiki Suzuki masterfully blends classic Americana.
+			%article.post-large.post
+				.post-image
+					%a{:href => "#", :class => "image-actions"}
+						= image_tag "/images/blog/5.jpg", :class => "post-image"
+				.post-meta
+					%h2.post-title= link_to "Heritage Shirt in Indigo", "#"
+					%span.date 6th September 2014
+					%p.excerpt Engineered Garments designer Daiki Suzuki masterfully blends classic Americana.

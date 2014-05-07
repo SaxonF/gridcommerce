@@ -9,9 +9,55 @@
 
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   /* Style adjustments for viewports 768px and over go here */
-
+  .container{
+  	max-width:720px;
+  }
+  header#header{
+  	position:fixed;
+  	padding:65px;
+  	width:260px;
+    height:auto;
+    line-height:$line-height;
+    .nav-toggle{
+      display:none;
+    }
+  	.site-nav{
+  		display:block;
+  	}
+  	.mini-cart{
+		padding:1em 0;
+		margin-top:2.5em;
+		bottom:40px;
+		right:auto;
+    h5{
+      line-height:$line-height;
+    }
+		&:before{
+			content:"";
+			height:2px;
+			width:30px;
+			background:$border-color;
+			position:absolute;
+			top:-1em;
+			left:0;
+		}
+	}
+	#site-logo{
+		text-align: left;
+		img{
+			height:auto;
+		}
+	}
+  }
+  #main{
+  	margin-left:260px;
+  }
+  .page-content.grid{
+  	padding:65px 65px 65px 0;
+    border:none;
+  }
 }
 
 

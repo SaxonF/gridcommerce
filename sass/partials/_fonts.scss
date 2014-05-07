@@ -60,7 +60,7 @@ h1, .alpha {
 	padding-bottom:9px;
 	display:inline-block;
 	padding-right:4em;
-	margin-bottom:5em;
+	margin-bottom:0;
 }
 
 h2, .beta {font-size: 2.827em; letter-spacing: -1px;}
@@ -82,6 +82,27 @@ h4, .delta {font-size: 1.414em; line-height:1.5;}
 h5 {font-size: 1em; line-height:1.65;}
 
 h6, .emphasis {font-size:0.857em; text-transform:uppercase; letter-spacing:.1em; font-weight:bold; }
+
+h6.separator-heading{
+	color:white;
+	margin:0 0;
+	display:inline-block;
+	position: relative;
+	&:before, &:after{
+		content:"";
+		height:3px;
+		width:30px;
+		background:white;
+		position:absolute;
+		top:5px;
+	}
+	&:before{
+		left:-40px;
+	}
+	&:after{
+		right:-40px;
+	}
+}
 
 .line-heading{
 	border-bottom:3px solid;
@@ -123,4 +144,8 @@ a{
 
 .align-center{
 	text-align:center;
+}
+
+.align-left{
+	text-align:left;
 }

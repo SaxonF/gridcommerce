@@ -1,4 +1,145 @@
+
+/**** Blog Grid ****/
+$grid-padding: 20px !default;
+$grid-cols: 4;
+$grid-large-image: percentage((1/$grid-cols)*2);
+$grid-sizer: percentage(1/$grid-cols);
+
+.post-grid{
+	margin:-20px (-$grid-padding);
+	padding:0;
+	list-style-type: none;
+	.post-sizer{
+		width:$grid-sizer;
+	}
+	.post{
+		float:left;
+		padding:$grid-padding;
+		&.post-small{
+			width:$grid-sizer;
+		}
+		&.post-large{
+			width:$grid-large-image;
+			h2.post-title{
+				font-size: 1.414em;
+			}
+		}
+	}
+}
+
+.post{
+	
+	&.post-featured{
+		width:100%;
+		position:relative;
+		.post-image{
+			a{
+				display:block;
+				background:#000;
+				img{
+					opacity: .5;
+				}
+			}
+		}
+		.post-meta{
+			position:absolute;
+			width:100%;
+			top:50%;
+			margin-top:-57px;
+			left:0;
+			text-align: center;
+			h6{
+				color:white;
+			}
+			h2{
+				color:white;
+				font-size: 3.998em;
+					letter-spacing: -2px;
+					margin-top:0;
+					a{
+						color:white;
+					}
+			}
+		}
+	}
+	.post-image{
+		position: relative;
+		img{
+			width:100%;
+			display:block;
+		}
+	}
+	h2.post-title{
+		margin-bottom:0;
+		margin-top:20px;
+		font-size:1em;
+		letter-spacing:0;
+		line-height:1.65;
+		a{
+			border:none;
+			color:$header-color;
+		}
+	}
+	span.date{
+		color:$soft-color;
+	}
+	.short-description{
+		font-size: 0.7857em; -webkit-font-smoothing:subpixel-antialiased;
+		color:$soft-color;
+	}
+}
+
+
 /* Post */
+
+.post-single{
+	width:75%;
+	padding-right:65px;
+	float:left;
+	.post-inner{
+		position:relative;
+		padding-left:25%;
+	}
+	.featured-image{
+		margin-bottom:65px;
+		img{
+			display:block;
+		}
+	}
+	.entry-header{
+		h2{
+			margin-top:0;
+		}
+	}
+	.entry-meta{
+		color:$soft-color;
+		padding-right:65px;
+		font-size: 0.7857em;
+		-webkit-font-smoothing:subpixel-antialiased; 
+		position:absolute;
+		left:0;
+		top:4px;
+		width:25%;
+		a{
+			color:$soft-color;
+		}
+		ul{
+			list-style-type:none;
+			margin:0;
+			padding:0;
+		}
+		h6{
+			margin-top:3em;
+			font-size:1em;
+		}
+		h6:first-child{
+			margin-top:0;
+		}
+		p{
+			margin:0;
+		}
+	}
+}
 
 h2.entry-title{
 	margin-bottom:0;
@@ -22,7 +163,7 @@ time.entry-date{
 	.image-caption{
 		position:absolute;
 		width:150px;
-		right:-175px;
+		left:-33%;
 		top:5px;
 		border-top:1px solid $border-color;
 		padding-top:1em;
@@ -178,6 +319,20 @@ time.entry-date{
 	}
 }
 
+/* Related */
+
+.related-posts{
+	width:25%;
+	padding-left:65px;
+	border-left:2px solid $border-color;
+	float:left;
+	.post{
+		width:100%;
+		float:left;
+		margin-bottom:40px;
+	}
+}
+
 /* Common post elements */
 
 .entry{
@@ -194,11 +349,11 @@ time.entry-date{
 /* Comments */
 
 .comments-header{
-	width:280px;
-	float:right;
-	margin-right:-280px;
+	width:33%;
+	float:left;
+	margin-left:-33%;
 	color:$soft-color;
-	padding:0 80px 0 40px;
+	padding:0 80px 0 0;
 	h6{
 		margin-top:0;
 	}

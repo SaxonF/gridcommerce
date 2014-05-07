@@ -11,6 +11,17 @@ $(function() {
 	  itemSelector: '.product'
 	});
 
+	/* Isotope for blog grid */
+
+	var $container = $('.post-grid.masonry');
+	$container.isotope({
+	  masonry: {
+	  	columnWidth: '.post-sizer',
+	  	gutter: 0
+	  },
+	  itemSelector: '.post'
+	});
+
 	/* Isotope for image grid */
 	var $imageContainer = $('.image-grid');
 	$imageContainer.isotope({

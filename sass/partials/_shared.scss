@@ -8,7 +8,7 @@
 }
 
 .border-col{
-	border-top:1px solid $border-color;
+	border-top:1px solid #e9e9e9;
 	padding-top:1.414em !important;
 	margin-top:2em;
 	:first-child{
@@ -18,7 +18,7 @@
 
 .full-slider {
 	position: relative;
-	margin:0 -5em;
+	margin:-65px -65px 65px -65px;
 	.slides{
 		width:100%;
 		margin:0;
@@ -48,24 +48,7 @@
 					margin-bottom:20px;
 				}
 				h6{
-					color:white;
-					margin:0 0 4.2em;
-					display:inline-block;
-					position: relative;
-					&:before, &:after{
-						content:"";
-						height:2px;
-						width:30px;
-						background:white;
-						position:absolute;
-						top:5px;
-					}
-					&:before{
-						left:-40px;
-					}
-					&:after{
-						right:-40px;
-					}
+					margin-bottom: 4.2em;
 				}
 			}
 		}
@@ -114,6 +97,14 @@ a.image-actions{
 	overflow: hidden;
 	clip: rect(0,0,0,0);
 	border: 0;
+}
+
+.stat{
+	strong{
+		font-size:60px;
+		font-weight:300;
+		display:block;
+	}
 }
 
 

@@ -1,7 +1,7 @@
-.cart{
+.cart-list{
 	float:left;
 	background:#ededed;
-	padding:5em 60px 0;
+	padding:0 65px;
 	width:600px;
 	padding-bottom:2000px;
 	margin-bottom:-2000px;
@@ -9,13 +9,12 @@
 		float:left;
 	}
 	ul.cart-items{
-		margin:0;
 		padding:0;
 		list-style-type:none;
-		margin:0 -60px;
+		margin:65px -65px 0;
 		border-top: 2px solid #e4e4e4;
 		li{
-			padding:20px 60px;
+			padding:20px 65px;
 			border-bottom: 2px solid #e4e4e4;
 			clear:both;
 			overflow: hidden;
@@ -104,7 +103,7 @@
 	width:200px;
 	margin-left:70px;
 	font-size:14px;
-	padding-top:20%;
+	padding-top:15%;
 	p{
 		color:$soft-color;
 	}
@@ -137,4 +136,9 @@
 			
 		}
 	}
+}
+
+/**** Checkout ****/
+.checkout-form{
+	margin-top:65px;
 }

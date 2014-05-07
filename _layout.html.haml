@@ -39,24 +39,27 @@
       %header#header
         #site-logo
           %a{:href => "/home"}
-            = image_tag "/images/logo.jpg", :class => "logo-main"
+            = image_tag "/images/placement/logo.png", :class => "logo-main"
+        .nav-toggle
+          %span
         .mini-cart.clearfix
           %h5 
             %a.cart-quantity{:href => "/cart"} 1
             %span.cart-total $249.00
-        %nav#primary
-          %ul
-            %li= link_to "Mens", "/products"
-            %li= link_to "Womens", "/products"
-            %li= link_to "Sale", "/products"
-            %li= link_to "Lookbook", "/lookbook"
-            
-        %nav#secondary
-          %ul
-            %li= link_to "About", "/about"
-            %li= link_to "Shipping Info", "/about.html"
-            %li= link_to "Blog", "/blog"
-            %li= link_to "Contact & Coats", "#"
+        .site-nav
+          %nav#primary
+            %ul
+              %li= link_to "Mens", "/products"
+              %li= link_to "Womens", "/products"
+              %li= link_to "Sale", "/products"
+              %li= link_to "Lookbook", "/lookbook"
+              
+          %nav#secondary
+            %ul
+              %li= link_to "About", "/about"
+              %li= link_to "Shipping Info", "/about.html"
+              %li= link_to "Blog", "/blog"
+              %li= link_to "Contact & Coats", "#"
       #main{ :role => 'main' }
         = yield
       %footer

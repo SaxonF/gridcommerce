@@ -5,50 +5,9 @@ $grid-sizer: percentage(1/$grid-cols);
 
 /***** Product List *****/
 
-.grid{
-	#category-header{
-		position: relative;
-		h4{
-			margin-top:0;
-		}
-		.toggle-filter{
-			display: block;
-			position:absolute;
-			right:27px;
-			bottom:27px;
-			padding:15px;
-			border-radius:2px;
-			.icon-bar{
-				height:4px;
-				width:30px;
-				background:white;
-				margin-bottom:5px;
-				display: block;
-				@include box-shadow(0px 1px 1px rgba(0,0,0,.1));
-				&:last-child{
-					margin-bottom: 0;
-				}
-			}
-			&:hover{
-				.icon-bar{
-					background:$link-color;
-				}
-			}
-		}
-	}
-	#category-header.image{
-		background:$soft-back;
-		padding:30px 40px;
-		background:url("/images/categories/category-2.jpg") no-repeat top left;
-		background-size:cover;
-		h4{
-			margin-bottom:3em;
-			color:white;
-		}
-		h1{
-			margin:0;
-			color:white;
-		}
+article.entry.grid{
+	section.entry-content{
+		padding-left:0;
 	}
 }
 
@@ -70,8 +29,8 @@ $grid-sizer: percentage(1/$grid-cols);
 }
 
 ul.product-grid{
-	margin:0 (-$grid-padding);
-	padding:$grid-padding 0 0;
+	margin:-20px (-$grid-padding);
+	padding:0;
 	list-style-type: none;
 	li.product-sizer{
 		width:$grid-sizer;
@@ -146,14 +105,15 @@ ul.product-grid{
 
 .related{
 	border-top:2px solid $border-color;
-	margin-top:70px;
-	padding:30px 0;
+	margin-top:65px;
+	padding:65px 0;
 }
 
 /***** Single Product *****/
 
 .single-product{
 	.product-images{
+		margin-top:-65px;
 		width:50%;
 		padding-right:20px;
 		position:relative;
@@ -167,8 +127,15 @@ ul.product-grid{
 			padding:0;
 			float:left;
 			list-style-type:none;
+			.image{
+				margin-bottom: 5px;
+				&:last-child{
+					margin-bottom:0;
+				}
+			}
 			img{
 				max-width:100%;
+				display:block;
 			}
 		}
 		
@@ -177,7 +144,6 @@ ul.product-grid{
 		width:50%;
 		padding-left:50px;
 		float:left;
-		padding-top:6.6em;
 		.breadcrumb{
 			a{
 				&:after{
@@ -276,16 +242,20 @@ ul.product-grid{
 
 /* Product Cover Pages */
 
-.grid{
+.page{
 	#category-header.cover{
 		position: relative;
 		height:760px;
 		background:url("../images/placement/6.jpg") no-repeat center center;
 		background-size:cover;
 		text-align: center;
+		overflow:hidden;
+		clear:both;
+		margin:-65px -65px 65px -65px;
 		h1{
 			font-size:78px;
 			margin-top:24%;
+			color:white;
 		}
 		.cover-caption{
 			color:white;
@@ -300,7 +270,7 @@ ul.product-grid{
 		}
 	}
 	.cover-products{
-		padding:0 40px;
+		padding:2*$grid-padding;
 		background:#e5e5e5;
 	}
 	.scroll-down{

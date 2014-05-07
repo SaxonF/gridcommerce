@@ -29,6 +29,11 @@ html {font-size: 16px;}
   max-width: none;
 }
 
+.container.full{
+  width:100%;
+  max-width:none;
+}
+
 /* Automatically clear rows and column / unit groupings */
 /* Rows are the primary building blocks for Girder */
 .row {

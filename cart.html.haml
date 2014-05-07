@@ -1,15 +1,14 @@
-#page-content.two-col
-	.wrapper
-		.cart
+%article.entry.cart
+	.container.full
+		.cart-list
 			%header#page-header
 				%h1 Your Cart
-			%article.entry
-				%ul.cart-items
-					%li.item
-						=image_tag "/images/products/cart1.png"
-						%span.remove
-						%h5.delta Heritage Shirt in Indigo
-						%span.price.delta $450.00
+			%ul.cart-items
+				%li.item
+					=image_tag "/images/products/cart1.png"
+					%span.remove
+					%h5.delta Heritage Shirt in Indigo
+					%span.price.delta $450.00
 
 					%li.item
 						=image_tag "/images/products/cart2.png"
