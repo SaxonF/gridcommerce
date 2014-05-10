@@ -3,13 +3,14 @@
 		.container.full
 			.product-images
 				%span.sale Sale
-				%ul.images
-					%li.image
-						=image_tag "/images/products/1-large.jpg"
-					%li.image
-						=image_tag "/images/products/2-large.jpg"
-					%li.image
-						=image_tag "/images/products/3-large.jpg"
+				.mobile-slider
+					%ul.images.slides
+						%li.image
+							=image_tag "/images/products/1-large.jpg"
+						%li.image
+							=image_tag "/images/products/2-large.jpg"
+						%li.image
+							=image_tag "/images/products/3-large.jpg"
 			.product-details
 				%header.product-header
 					%span.breadcrumb.font_small

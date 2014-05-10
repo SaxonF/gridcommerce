@@ -27,19 +27,16 @@ header#header {
 	bottom:0;
 	left:0;
 	height:116px;
-	padding:30px 65px;
-	font-size:0.857em;
-	.site-nav{
-		display:none;
-	}
+	padding:30px 40px;
 	.nav-toggle{
 		position:absolute;
-		left:65px;
+		left:40px;
 		height:20px;
 		bottom:47px;
 		cursor: pointer;
 		display:block;
 		width:30px;
+		z-index: 2000;
 		&:hover{
 			span, span:before, span:after{
 				background:$link-color;
@@ -56,6 +53,7 @@ header#header {
 	  top:9px;
 	  display: block;
 	  content: '';
+	  @include transition(all 500ms ease-in-out);
 	}
 	.nav-toggle span:before {
 	  top: -7px;
@@ -63,6 +61,21 @@ header#header {
 	.nav-toggle span:after {
 	  bottom: -7px; 
 	  top:auto;
+	}
+	.nav-toggle.active{
+		span{
+			background-color: transparent;
+		}
+		span:before, span:after{
+			background-color:white;
+			top: 0;
+		}
+		span:before{
+			@include transform(rotate(45deg));
+		}
+		span:after{
+			@include transform(rotate(-45deg));
+		}
 	}
 	#site-logo{
 		text-align: center;
@@ -74,7 +87,7 @@ header#header {
 	.mini-cart{
 		position:absolute;
 		bottom:0;
-		right:65px;
+		right:40px;
 		h5{
 			margin:0;
 
@@ -135,16 +148,21 @@ header#header {
 /**** Page Types ****/
 
 .page-content.grid{
-	padding:40px 65px 65px 65px;
-	overflow:hidden;
+	padding:40px;
 	clear:both;
 	border-top:2px solid $border-color;
+	@include bp(tiny) {
+      padding:40px 65px 65px 65px;
+    }
 }
 
 article.page{
 	width:100%;
-	padding:65px;
+	padding:65px 40px;
 	background:$pageBack;
+	@include bp(tiny) {
+      padding:65px;
+    }
 	#page-header{
 		padding-top:0;
 		margin-bottom:65px;

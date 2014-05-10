@@ -1,46 +1,47 @@
-%article.entry.cart
-	.container.full
-		.cart-list
-			%header#page-header
-				%h1.checkout-heading Checkout
+%section.page-content
+  .container.full
+    %article.entry.cart
+      .cart-wrapper
+        .cart-list
+          %header#page-header
+            %h1.checkout-heading Checkout
 
-				%ol.checkout-steps
-					%li.current Shipping
-					%li Payment
-					%li Complete
-			.checkout-form
-				%h3.checkout-title Shipping Details
-				%form.border-form
-					.row
-						.input.text.half.unit
-							%label First Name
-							%input.form-control{:type => "text", :placeholder => "Enter first name"}
-						.input.text.half.unit
-							%label Last Name
-							%input.form-control{:type => "text", :placeholder => "Enter last name"}
-					.input.text
-						%label Email
-						%input.form-control{:type => "text", :placeholder => "Enter email address"}
-					.input.text
-						%label Company Name
-						%input.form-control{:type => "text", :placeholder => "Enter company name"}
-					.input.text
-						%label Address
-						%input.form-control{:type => "text", :placeholder => "Your Address"}
-					.checkout-nav
-						%a.next.button.dark.wide{:href => "#"} Next
-						%a.back.button.soft.wide{:href => "#"} Back
-		.totals
-			%h6 Your Order
-			%p.font_small Shipping is calculated automatically based on your location.
-			%table
-				%tr
-					%th Products
-					%td $525.00
-				%tr.shipping
-					%th Shipping
-					%td 
-						$50.00
-				%tr
-					%th Total
-					%td $575.00
+            %ol.checkout-steps
+              %li.current Shipping
+              %li Payment
+          .checkout-form
+            %h3.checkout-title Shipping Details
+            %form.border-form
+              .row
+                .input.text.half.unit
+                  %label First Name
+                  %input.form-control{:type => "text", :placeholder => "Enter first name"}
+                .input.text.half.unit
+                  %label Last Name
+                  %input.form-control{:type => "text", :placeholder => "Enter last name"}
+              .input.text
+                %label Email
+                %input.form-control{:type => "text", :placeholder => "Enter email address"}
+              .input.text
+                %label Company Name
+                %input.form-control{:type => "text", :placeholder => "Enter company name"}
+              .input.text
+                %label Address
+                %input.form-control{:type => "text", :placeholder => "Your Address"}
+              .checkout-nav
+                %a.next.button.dark.wide{:href => "#"} Next
+                %a.back.button.soft.wide{:href => "#"} Back
+        .totals.checkout-totals
+          %h6 Your Order
+          %p.font_small Shipping is calculated automatically based on your location.
+          %table
+            %tr
+              %th Products
+              %td $525.00
+            %tr.shipping
+              %th Shipping
+              %td 
+                $50.00
+            %tr
+              %th Total
+              %td $575.00
