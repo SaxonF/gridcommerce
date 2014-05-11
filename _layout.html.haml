@@ -26,6 +26,7 @@
     
     -# CSS: implied media="all"
     -# CSS concatenated and minified via ant build script
+    %link{:href => "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css", :rel => "stylesheet"}/
     %link{ :rel => "stylesheet", :href => "stylesheets/style.css"}/
     
     -# 
@@ -43,9 +44,13 @@
         .nav-toggle
           %span
         .mini-cart.clearfix
-          %h5 
-            %a.cart-quantity{:href => "/cart"} 1
-            %span.cart-total $249.00
+          %h5
+            %a{:href => "/cart"}
+
+              %span.cart-quantity 
+                %i.fa.fa-shopping-cart
+                1
+              %span.cart-total $249.00
         .site-nav
           %nav#primary
             %ul
@@ -74,6 +79,7 @@
     
     -# scripts concatenated and minified via ant build script
     %script{ :src => "js/plugins.js" }
+    %script{ :src => "js/jquery.affix.js" }
     %script{ :src => "js/script.js" }
     -# end scripts
     

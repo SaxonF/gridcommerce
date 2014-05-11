@@ -1,28 +1,13 @@
 %section.page-content
 	%article.entry.page
-		.full-slider
+		%header.cover.full-slider
 			%ul.slides
-				%li
-					.slide-content
-						%h1 New Mens Clothes.
-						%h6.separator-heading Get in quick. Sell out soon.
+				%li{:style => "background-image: url('/images/placement/6.jpg');"}
+					.slide-content.centered
+						=image_tag "/images/slides/text4.png", :class => "fade-sequence", :width => "300"
+				%li{:style => "background-image: url('/images/slides/2.jpg');"}
+					.slide-content.centered
+						%h1.large.fade-sequence New Mens Clothes.
+						%h6.separator-heading.fade-sequence Get in quick. Sell out soon.
 						%br
-						=link_to "View Now", "/products", :class => "button border"
-					=image_tag "/images/slides/2.jpg"
-				%li
-					.slide-content
-						%h1 Winter Collection.
-						%h6.separator-heading New sale starting next week
-						%br 
-						=link_to "View Now", "/products", :class => "button border"
-					=image_tag "/images/slides/1.jpg"
-			
-	
-		.container
-			.row
-				.half.unit
-					%h4 Shipping
-					%p Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. 
-				.half.unit
-					%h4 Our History
-					%p Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. 
+						=link_to "View Now", "/products", :class => "button border fade-sequence"

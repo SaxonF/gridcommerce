@@ -88,15 +88,22 @@ header#header {
 		position:absolute;
 		bottom:0;
 		right:40px;
+		span.cart-quantity{
+			color:$link-color;
+		}
 		h5{
 			margin:0;
-
-			line-height:116px;
-			span{
+			a{
+				display:block;
+				margin:0;
+				line-height:116px;
+			}
+			span.cart-total{
 				color:$soft-color;
 				padding-left:15px;
 				margin-left:15px;
 				border-left:1px solid $border-color;
+				display:none;
 			}
 		}
 	}
@@ -137,7 +144,7 @@ header#header {
 #page-header{
 	clear:both;
 	overflow:hidden;
-	padding-top:65px;
+	margin:0 0 65px 0;
 }
 
 #main {
@@ -163,13 +170,9 @@ article.page{
 	@include bp(tiny) {
       padding:65px;
     }
-	#page-header{
-		padding-top:0;
-		margin-bottom:65px;
-	}
 	.featured-image{
 		height:470px;
-		background:#ed008c url("http://residentialbylandsecurities.com/wp-content/uploads/2013/10/KingsGate13bALTERED_Saved_mini.jpg");
+		background:#ed008c;
 		background-size:cover;
 		margin:-65px -65px 65px -65px;
 	}

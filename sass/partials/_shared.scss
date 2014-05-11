@@ -1,4 +1,72 @@
 
+/* Product Cover Pages */
+
+.page{
+	header.cover{
+		&:before{
+			content:"";
+			position:absolute;
+			left:0;
+			top:0;
+			right:0;
+			bottom:0;
+			background:url("/images/loader.gif") no-repeat center center;
+			-webkit-background-size: 40px;
+			-moz-background-size: 40px;
+			background-size: 40px;
+			z-index:-1;
+		}
+		position: relative;
+		height:760px;
+		background-size:cover !important;
+		text-align: center;
+		overflow:hidden;
+		clear:both;
+		margin:-65px -65px 65px -65px;
+		h1{
+			color:white;
+			@include transition(opacity 1s ease-out); 
+		}
+		.cover-caption{
+			color:white;
+			@include small-capital;
+			max-width:260px;
+			margin:0 auto;
+			position:absolute;
+			bottom:100px;
+			left:50%;
+			margin-left:-130px;
+			line-height:24px;
+		}
+		.image-inner{
+			height:100%;
+			position:relative;
+		}
+	}
+	.scroll-down{
+		display:block;
+		position:absolute;
+		bottom:50px;
+		left:50%;
+		margin-left:-16px;
+		width:33px;
+		height:18px;
+		background:url("../images/scroll-down.png") no-repeat center center;
+		-webkit-transition: opacity .2s ease-in-out;
+		-moz-transition: opacity .2s ease-in-out;
+		-ms-transition: opacity .2s ease-in-out;
+		-o-transition: opacity .2s ease-in-out;
+		transition: opacity .2s ease-in-out;
+		span{
+			display:none;
+			color:white;
+			font-size:11px;
+		}
+		&:hover{
+			opacity:0.4;
+		}
+	}
+}
 
 /* Shared Styles */
 
@@ -17,8 +85,6 @@
 }
 
 .full-slider {
-	position: relative;
-	margin:-65px -65px 65px -65px;
 	.slides{
 		width:100%;
 		margin:0;
@@ -27,28 +93,29 @@
 		max-width:100%;
 		max-height:100%;
 		position: relative;
+		height:100%;
 		li{
 			position:relative;
+			height:100%;
+			background-size:cover;
+			background-position:center center;
+			background-repeat:no-repeat;
 			img{
-				max-width:100%;
-				max-height:100%;
-				min-width:100%;
-				min-height:100%;
 				display: block;
 			}
 			.slide-content{
 				width:100%;
-				padding-top:24%;
-				position:absolute;
-				display: inline-block;
+				left:0;
 				text-align: center;
 				h1{
 					color:white;
-					font-size:64px;
-					margin-bottom:20px;
+					margin-bottom:16px;
 				}
 				h6{
 					margin-bottom: 4.2em;
+				}
+				img{
+					display:inline;
 				}
 			}
 		}
@@ -107,6 +174,12 @@ a.image-actions{
 	}
 }
 
+/* Vertical Align */
+
+.centered{
+	@include vertical-align;
+}
+
 /* Clearfix */
 .clearfix:after { 
   content: "."; 
@@ -138,3 +211,23 @@ a.image-actions{
 .flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
 .flex-control-thumbs img:hover {opacity: 1;}
 .flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
+
+
+/* Affix */
+
+.affix{
+	position:static;
+}
+
+/**** Animation Related ****/
+
+.fade-sequence{
+	@include opacity(0);
+	transition: opacity 1s ease-out;
+    -moz-transition: opacity 1s ease-out;
+    -webkit-transition: opacity 1s ease-out;
+    -o-transition: opacity 1s ease-out;
+	&.in{
+		@include opacity(1);
+	}
+}

@@ -57,11 +57,17 @@
 						= link_to 'Next Post', '#', :class => "next emphasis border-block"
 					.entry-share.clearfix
 						%h5 Share This Post
-						%ul.share-links
-							%li.facebook
-							%li.twitter
-							%li.google
-							%li.pinterest
+						.share-links
+							%a{:href => "#"}
+								%i.fa.fa-facebook
+							%a{:href => "#"}
+								%i.fa.fa-twitter
+							%a{:href => "#"}
+								%i.fa.fa-google-plus
+							%a{:href => "#"}
+								%i.fa.fa-tumblr
+							%a{:href => "#"}
+								%i.fa.fa-pinterest
 				#comments
 					.comments-header
 						%h6 14 Comments

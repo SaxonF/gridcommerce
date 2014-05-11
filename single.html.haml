@@ -1,83 +1,106 @@
 %section.page-content.grid
-	%article.single-product.entry.clearfix
-		.container.full
-			.product-images
-				%span.sale Sale
-				.mobile-slider
-					%ul.images.slides
-						%li.image
-							=image_tag "/images/products/1-large.jpg"
-						%li.image
-							=image_tag "/images/products/2-large.jpg"
-						%li.image
-							=image_tag "/images/products/3-large.jpg"
-			.product-details
-				%header.product-header
-					%span.breadcrumb.font_small
-						=link_to "Mens", "#"
-						/
-						=link_to "Tops", "#"
-						/
-						=link_to "Shirts", "#"
+  %article.single-product.entry.clearfix
+    .container.full
+      .product-images
+        %span.sale Sale
+        .mobile-slider
+          %ul.images.slides
+            %li.image
+              =image_tag "/images/products/1-large.jpg"
+            %li.image
+              =image_tag "/images/products/2-large.jpg"
+            %li.image
+              =image_tag "/images/products/3-large.jpg"
+      .product-details
+        .affixed
+          %header.product-header
+            %span.breadcrumb.font_small
+              =link_to "Mens", "#"
+              /
+              =link_to "Tops", "#"
+              /
+              =link_to "Shirts", "#"
 
-					%h2.title Heritage Shirt in Indigo
-					%span.price.gamma $30.00
-				%nav.product-nav.border-col
-					%ul
-						%li.active=link_to "Description", "#"
-						%li=link_to "Reviews", "#"
-						%li=link_to "Shipping", "#"
-				.product-content
-					%p Alden's classic Ranger Mocc, made exclusively for Need Supply co. Hand crafted from a smooth oiled, tobacco chamois leather, with a 360 reverse welt, mahogany plantation crepe outsole, and brown goodyear welt and edge stitching. 
+            %h2.title Heritage Shirt in Indigo
+            %span.price.gamma $30.00
+          %nav.product-nav.border-col
+            %ul
+              %li.active=link_to "Description", "#"
+              %li=link_to "Reviews", "#"
+              %li=link_to "Shipping", "#"
+          .product-content
+            %p Alden's classic Ranger Mocc, made exclusively for Need Supply co. Hand crafted from a smooth oiled, tobacco chamois leather, with a 360 reverse welt, mahogany plantation crepe outsole, and brown goodyear welt and edge stitching. 
 
-				.product-actions.row
-					.product-buy.half.unit
-						%form.border-col
-							.input.select
-								%select.form-control
-									%option Color
-							-# %span.price.delta $30.00
-							=link_to "Add to cart", "#", :class => "button dark block"
-							-#=link_to "Add to wishlist", "#", :class => "button grey block"
-					.product-share.half.unit
-						.border-col
-						%ul.categories
-							%li
-								%h6 Categories
-							%li=link_to "Tops", "#"
-							%li=link_to "Mens", "#"
-							%li=link_to "Sale", "#"
-	%section.related.clearfix
-		.container.full
-			%ul.product-grid
-				%li.product-small.product
-					.product-image
-						%a{:href => "#", :class => "image-actions"}
-							= image_tag "/images/products/9.jpg", :class => "product-image"
-						%span.sale Sale
-					.product-meta
-						%h5.product-title= link_to "Heritage Shirt in Indigo", "/single"
-						%span.price $30.00
-				%li.product-small.product
-					.product-image
-						%a{:href => "#", :class => "image-actions"}
-							= image_tag "/images/products/6.jpg", :class => "product-image"
-					.product-meta
-						%h5.product-title= link_to "Heritage Shirt in Indigo", "/single"
-						%span.price $30.00
-				%li.product-small.product
-					.product-image
-						%a{:href => "#", :class => "image-actions"}
-							= image_tag "/images/products/7.jpg", :class => "product-image"
-					.product-meta
-						%h5.product-title= link_to "Heritage Shirt in Indigo", "/single"
-						%span.price $30.00
-				%li.product-small.product
-					.product-image
-						%a{:href => "#", :class => "image-actions"}
-							= image_tag "/images/products/8.jpg", :class => "product-image"
-					.product-meta
-						%h5.product-title= link_to "Heritage Shirt in Indigo", "/single"
-						%span.price $30.00
+          .product-actions.row
+            .product-buy.half.unit
+              %form.border-col
+                .input.select
+                  %select.form-control
+                    %option Color
+                -# %span.price.delta $30.00
+                =link_to "Add to cart", "#", :class => "button dark block"
+                -#=link_to "Add to wishlist", "#", :class => "button grey block"
+            .product-share.half.unit
+              .border-col
+                .share
+                  // Replace with actual share code
+                  #fb-root
+                  :javascript
+                    (function(d, s, id) {
+                      var js, fjs = d.getElementsByTagName(s)[0];
+                      if (d.getElementById(id)) return;
+                      js = d.createElement(s); js.id = id;
+                      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+                      fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));
+                  .fb-share-button{"data-href" => "https://developers.facebook.com/docs/plugins/", "data-type" => "button_count"}
+                  %a.twitter-share-button{"data-url" => "http://example.com", "data-via" => "SaxonFletcher", :href => "https://twitter.com/share"} Tweet
+                  :javascript
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+                %ul.categories
+                  %li
+                    %h6 Categories
+                  %li=link_to "Tops", "#"
+                  %li=link_to "Mens", "#"
+                  %li=link_to "Sale", "#"
+  %section.related.clearfix
+    .container.full
+      %ul.product-grid
+        %li.product-small.product
+          .product-image
+            %a{:href => "#", :class => "image-actions"}
+              = image_tag "/images/products/9.jpg", :class => "product-image"
+            %span.sale Sale
+          .product-meta
+            %h5.product-title= link_to "Heritage Shirt in Indigo", "/single"
+            %span.price $30.00
+        %li.product-small.product
+          .product-image
+            %a{:href => "#", :class => "image-actions"}
+              = image_tag "/images/products/6.jpg", :class => "product-image"
+          .product-meta
+            %h5.product-title= link_to "Heritage Shirt in Indigo", "/single"
+            %span.price $30.00
+        %li.product-small.product
+          .product-image
+            %a{:href => "#", :class => "image-actions"}
+              = image_tag "/images/products/7.jpg", :class => "product-image"
+          .product-meta
+            %h5.product-title= link_to "Heritage Shirt in Indigo", "/single"
+            %span.price $30.00
+        %li.product-small.product
+          .product-image
+            %a{:href => "#", :class => "image-actions"}
+              = image_tag "/images/products/8.jpg", :class => "product-image"
+          .product-meta
+            %h5.product-title= link_to "Heritage Shirt in Indigo", "/single"
+            %span.price $30.00
 
-				
+.cart-message.animated.fadeInUp
+  %h4
+    %a{:href => "/single"} Heritage Shirt in Indigo
+    added to your cart
+  .message-actions
+    %a.button.dark{:href => "/cart"} Checkout
+    %a.button.dark{:href => "/products"} Continue Shopping
+        

@@ -1,5 +1,6 @@
 form{
 	margin-bottom:3em;
+	margin-top:2em;
 	.form-control {
 		@include box-sizing(border-box);
 		@include background-clip(padding-box);
@@ -29,13 +30,17 @@ form{
 		height:100px;
 	}
 	select.form-control{
-		background:none;
+		background:url(/images/select-2x.png) no-repeat right center;
+		background-size:33px 8px;
 		@include small-capital;
 		padding:15px 20px 13px;
 		cursor: pointer;
 	}
 	.input{
 		margin-bottom:1em;
+	}
+	.input.submit{
+		margin-top:2em;
 	}
 	::-webkit-input-placeholder {
 	   color: #bbb;

@@ -1,0 +1,23 @@
+%section.page-content
+  .container.full
+    %article.entry.cart
+      .cart-wrapper
+        .cart-list
+          %header#page-header
+            %h1.checkout-heading Your Account
+
+          .checkout-form
+            %h3 Become a Member
+            %form.border-form
+              .row
+                .input.text
+                  %label Username
+                  %input.form-control{:type => "text", :placeholder => "Enter first name"}
+              .input.text
+                %label Password
+                %input.form-control{:type => "text", :placeholder => "Enter email address"}
+              .input.submit
+                %a.back.button.dark.wide{:href => "#"} Login
+        .totals.checkout-totals
+          %h6 Your Order
+          %p.font_small The Fibonacci is a leather wallet – hand stitched and edge coated. There are two card pockets and a larger end pocket for notes, a key, coffee cards or other items.

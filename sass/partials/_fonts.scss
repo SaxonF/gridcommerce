@@ -11,6 +11,16 @@
 	font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
 }
 
+@mixin body-font{
+	font-family: 'Helvetica Neue', Helvetica, arial, sans-serif;
+}
+
+@mixin headline-font{
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+
 /* Rendering */
 html,
 input,
@@ -29,7 +39,7 @@ textarea                    { -webkit-font-smoothing:antialiased; }
 body {
   background-color: white;
   font-size: 0.875em;
-  font-family: 'Helvetica Neue', Helvetica, arial, serif;
+  @include body-font;
   font-weight: 400;
   line-height: $line-height;
   color: $font-color;
@@ -47,8 +57,12 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, .alpha {
   margin-top: 0;
-  font-size: 3.998em;
+  font-size: 2.827em;
   letter-spacing: -2px;
+}
+
+h1.large{
+	@include headline-font;
 }
 
 #page-header h1{
@@ -61,14 +75,19 @@ h1, .alpha {
 	display:inline-block;
 	margin-bottom:0;
 }
+#page-header.large-header{
+	h1{
+		display:block;
+	}
+}
 
-h2, .beta {font-size: 2.827em; letter-spacing: -1px;}
+h2, .beta {font-size: 1.999em; letter-spacing: -1px;}
 
 h2.entry-title a{
 	color:$header-color;
 }
 
-h3, .gamma {font-size: 1.999em; line-height:1.3; letter-spacing: -1px;}
+h3, .gamma {font-size: 1.414em; line-height:1.3; letter-spacing: -1px;}
 
 .em{
 	@include serif-font;

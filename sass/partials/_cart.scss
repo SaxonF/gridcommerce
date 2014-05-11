@@ -6,7 +6,7 @@
 .cart-wrapper{
 	float:left;
 	background:#ededed;
-	padding:0 40px 65px;
+	padding:65px 40px 65px;
 	width:100%;
 	position:relative;
 	min-height:100vh;
@@ -16,7 +16,7 @@
       text-align: left;
     }
     @include bp(tiny){
-    	padding:0 65px 65px;
+    	padding:65px;
     }
 	.cart-list{
 		.checkout-heading{
@@ -80,7 +80,6 @@
 		}
 		.checkout-title{
 			margin-top:0;
-			margin-bottom:1em;
 		}
 		.checkout-steps{
 			float:right;
@@ -107,9 +106,6 @@
 					color:$header-color;
 				}
 			}
-		}
-		.checkout-nav{
-			margin-top:2em;
 		}
 		a.next{
 			float:right;
@@ -175,6 +171,57 @@
 				display:block;
 				font-size: 0.7857em; -webkit-font-smoothing:subpixel-antialiased;
 				
+			}
+		}
+	}
+}
+
+/**** Cart Message ****/
+.cart-message{
+	background:rgba(0,0,0,.9);
+	position:fixed;
+	left:0;
+	bottom:0;
+	@include opacity(.9);
+	right:0;
+	z-index:200;
+	text-align:center;
+	@include bp(small) {
+		width:550px;
+		left:65px;
+		right:auto;
+		bottom:100px;
+		top:auto;
+	}
+	h4{
+		padding:50px;
+		font-weight:normal;
+		color:white;
+		margin:0;
+		a{
+			color:white;
+			border-bottom:1px solid #555;
+		}
+	}
+	.message-actions{
+		border-top:2px solid #333;
+		bottom:0;
+		width:100%;
+		left:0;
+		a{
+			float:left;
+			width:50%;
+			padding:30px 20px;
+			display:block;
+			text-align: center;
+			background:none;
+			color:#999;
+			&:hover{
+				background:rgba(0,0,0,.95);
+				color:white;
+			}
+			&:last-child{
+				border-left:2px solid #333;
 			}
 		}
 	}

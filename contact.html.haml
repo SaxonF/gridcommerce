@@ -1,0 +1,41 @@
+- content_for "dfasd"
+%section.page-content
+  %article.entry.page
+    %header#page-header
+      .container
+        %h1 Contact Us
+    .container
+      %h2 Get in touch. We'd love to chat.
+      .row
+        .third.unit
+          %h5 Sales Enquiries
+          %p 
+            +1 718 625 1916
+            %br
+            %a{:href => "sales@gridcommerce.com"} sales@gridcommerce.com
+        .third.unit
+          %h5 Media Enquiries
+          %p 
+            +1 718 625 1916
+            %br
+            %a{:href => "sales@gridcommerce.com"} media@gridcommerce.com
+        .third.unit
+          %h5 General Enquiries
+          %p 
+            +1 718 625 1916
+            %br
+            %a{:href => "general@gridcommerce.com"} general@gridcommerce.com
+      %form.border-form
+        .row
+          .input.text
+            %label Name
+            %input.form-control{:type => "text", :placeholder => "Enter first name"}
+        .input.text
+          %label Email
+          %input.form-control{:type => "text", :placeholder => "Enter email address"}
+        .input.text
+          %label Message
+          %textarea.form-control{:placeholder => "Enter email address"}
+        .input.submit
+          %a.back.button.dark.wide{:href => "#"} Login
+      
