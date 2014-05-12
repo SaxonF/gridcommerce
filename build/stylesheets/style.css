@@ -5321,7 +5321,7 @@ a.image-actions img {
   header#header .site-nav nav#primary ul li a {
     color: white;
     text-indent: -2px;
-    font-size: 3.998em;
+    font-size: 2.827em;
   }
   header#header .site-nav nav#secondary, header#header .site-nav nav#primary {
     -webkit-transform: translateY(0%);
@@ -5356,7 +5356,7 @@ a.image-actions img {
   header#header .site-nav.active nav#primary ul li a {
     color: white;
     text-indent: -2px;
-    font-size: 3.998em;
+    font-size: 2.827em;
   }
   header#header .site-nav.active nav#secondary {
     z-index: 500;
