@@ -3717,7 +3717,7 @@ form textarea {
   height: 100px;
 }
 form select.form-control {
-  background: url(images/select-2x.png) no-repeat right center;
+  background: url(../images/select-2x.png) no-repeat right center;
   background-size: 33px 8px;
   font-size: 0.857em;
   text-transform: uppercase;
@@ -4257,7 +4257,7 @@ article.entry.grid section.entry-content {
   font-weight: bold;
   font-size: 0.7857em;
   position: absolute;
-  background: url("..images/sale.png") no-repeat center center;
+  background: url("../images/sale.png") no-repeat center center;
   text-align: center;
   line-height: 63px;
   color: white;
@@ -4773,7 +4773,7 @@ ul.product-grid .product.product-large {
   top: 0;
   right: 0;
   bottom: 0;
-  background: url("images/loader.gif") no-repeat center center;
+  background: url("/images/loader.gif") no-repeat center center;
   -webkit-background-size: 40px;
   -moz-background-size: 40px;
   background-size: 40px;
@@ -4812,7 +4812,7 @@ ul.product-grid .product.product-large {
   margin-left: -16px;
   width: 33px;
   height: 18px;
-  background: url("..images/scroll-down.png") no-repeat center center;
+  background: url("../images/scroll-down.png") no-repeat center center;
   -webkit-transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
   -ms-transition: opacity .2s ease-in-out;
