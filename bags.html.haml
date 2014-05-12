@@ -1,0 +1,88 @@
+%section.page-content.grid
+	%article.entry
+		.container.full
+			.filter-bar.row
+				.fourth.unit
+					.border-col
+						%h3 Product Filter
+				.fourth.unit
+					.border-col
+						%h6 Filter by price
+				.fourth.unit
+					.border-col
+						%h6 Filter by price
+						%ul.filter-nav
+							%li=link_to "Extra Small", "#"
+							%li=link_to "Small", "#"
+							%li=link_to "Medium", "#"
+							%li=link_to "Large", "#"
+							%li=link_to "Extra Large", "#"
+				.fourth.unit
+					.border-col
+						%h6 Filter by Color
+						%ul.filter-nav
+							%li=link_to "Red", "#"
+							%li=link_to "Green", "#"
+							%li=link_to "Blue", "#"
+							%li=link_to "Orange", "#"
+							%li=link_to "Dark Colors", "#"
+			%ul.product-grid.clearfix.masonry
+				%li.product-sizer
+				%li.product-small.product
+					.product-image.is-loading
+						%a{:href => "#", :class => "image-actions"}
+							= image_tag "products/1-white.jpg", :class => "product-image"
+						%span.sale Sale
+					.product-meta
+						%h5.product-title= link_to "Heritage Shirt in Indigo", "/single"
+						%span.price $30.00
+						%p.short-description Engineered Garments designer Daiki Suzuki masterfully blends classic Americana.
+				%li.product-small.product
+					.product-image.is-loading
+						%a{:href => "#", :class => "image-actions"}
+							= image_tag "products/3-white.jpg", :class => "product-image"
+					.product-meta
+						%h5.product-title= link_to "Heritage Shirt in Indigo", "#"
+						%span.price $30.00
+						%p.short-description Engineered Garments designer Daiki Suzuki masterfully blends classic Americana.
+				%li.product-small.product
+					.product-image.is-loading
+						%a{:href => "#", :class => "image-actions"}
+							= image_tag "products/4-white.jpg", :class => "product-image"
+					.product-meta
+						%h5.product-title= link_to "Heritage Shirt in Indigo", "#"
+						%span.price $30.00
+						%p.short-description Engineered Garments designer Daiki Suzuki masterfully blends classic Americana.
+				%li.product-small.product
+					.product-image.is-loading
+						%a{:href => "#", :class => "image-actions"}
+							= image_tag "products/5-white.jpg", :class => "product-image"
+					.product-meta
+						%h5.product-title= link_to "Heritage Shirt in Indigo", "#"
+						%span.price $30.00
+						%p.short-description Engineered Garments designer Daiki Suzuki masterfully blends classic Americana.
+				%li.product-small.product
+					.product-image.is-loading
+						%a{:href => "#", :class => "image-actions"}
+							= image_tag "products/7-white.jpg", :class => "product-image"
+					.product-meta
+						%h5.product-title= link_to "Heritage Shirt in Indigo", "#"
+						%span.price $30.00
+						%p.short-description Engineered Garments designer Daiki Suzuki masterfully blends classic Americana.
+				%li.product-small.product
+					.product-image.is-loading
+						%a{:href => "#", :class => "image-actions"}
+							= image_tag "products/8-white.jpg", :class => "product-image"
+					.product-meta
+						%h5.product-title= link_to "Heritage Shirt in Indigo", "#"
+						%span.price $30.00
+						%p.short-description Engineered Garments designer Daiki Suzuki masterfully blends classic Americana.
+				%li.product-small.product
+					.product-image.is-loading
+						%a{:href => "#", :class => "image-actions"}
+							= image_tag "products/2-white.jpg", :class => "product-image"
+					.product-meta
+						%h5.product-title= link_to "Heritage Shirt in Indigo", "#"
+						%span.price $30.00
+						%p.short-description Engineered Garments designer Daiki Suzuki masterfully blends classic Americana.
+
