@@ -5685,3 +5685,10 @@ when it has other properties nested beneath it.
 2014-05-12 21:55:11      Copy /js/script.js
 2014-05-12 21:55:11      Copy /stylesheets/style.css
 2014-05-12 21:55:11      Copy /stylesheets/partials/forms.css
+2014-05-12 21:59:45 overwrite stylesheets/style.css 
+2014-05-12 22:00:03 identical stylesheets/style.css 
+2014-05-12 22:00:44 overwrite stylesheets/style.css 
+2014-05-12 22:00:52 identical stylesheets/style.css 
+2014-05-12 22:00:56 identical stylesheets/style.css 
+2014-05-12 22:00:57 identical stylesheets/style.css 
+2014-05-12 22:01:17 identical stylesheets/style.css 
