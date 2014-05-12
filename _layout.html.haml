@@ -27,6 +27,7 @@
     -# CSS: implied media="all"
     -# CSS concatenated and minified via ant build script
     %link{:href => "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css", :rel => "stylesheet"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Montserrat:700", :rel => "stylesheet", :type => "text/css"}/
     %link{ :rel => "stylesheet", :href => "stylesheets/style.css"}/
     
     -# 
@@ -34,7 +35,6 @@
       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/
     %script{ :src => "js/modernizr-2.0.6.min.js" }
-    = livereload_js
   %body
     #container
       %header#header
